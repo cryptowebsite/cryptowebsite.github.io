@@ -190,7 +190,7 @@ body {
   .technology__linux-link {
     right: 50%;
     margin-right: -2rem;
-    bottom: 0.3125rem;
+    bottom: -1rem;
   }
 
   .technology__linux {
