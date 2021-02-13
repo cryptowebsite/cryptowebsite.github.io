@@ -8,11 +8,9 @@
 
 <img src="https://img.shields.io/badge/css-3-green.svg">
 
+<img src="https://img.shields.io/badge/js-ES6-yellow.svg">
+
 <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
-
-<img src="https://img.shields.io/github/stars/cryptowebsite/cryptowebsite.github.io.svg?style=flat">
-
-<img src="https://img.shields.io/github/issues/cryptowebsite/cryptowebsite.github.io.svg">
 
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
 
