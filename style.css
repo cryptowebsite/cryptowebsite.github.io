@@ -1,3 +1,13 @@
+#backdrop {
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 body {
   width: 100%;
   max-width: 80rem;
@@ -68,8 +78,8 @@ body {
 
 .technology__title {
   text-align: center;
-  font-size: 2rem;
-  margin-top: 0.9375rem;
+  font-size: 2.25rem;
+  margin: 0.9375rem 0 0.25rem;
 }
 
 .technology__list {
@@ -99,6 +109,68 @@ body {
 
 .technology__link:hover {
   color: #f7262d;
+}
+
+.certificates__title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 0 0 0.625rem;
+}
+
+.certificates__images {
+  box-sizing: border-box;
+  padding: 0 2.5rem 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-block {
+  width: 20rem;
+  padding: 0.625rem;
+  box-sizing: border-box;
+}
+
+.image-block__image {
+  width: 18.75rem;
+}
+
+.image-block__image:hover {
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 50%) 0 0 0.625rem;
+}
+
+.image-block__description {
+  margin: 0;
+  padding: 0.3125rem;
+}
+
+.popup {
+  z-index: 101;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup__img {
+  max-width: 75rem;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: -0.625rem;
+  left: -0.5625rem;
+}
+
+.popup__wrapper {
+  position: relative;
+  z-index: 102;
+
 }
 
 @media (max-width: 575px) {
@@ -161,6 +233,10 @@ body {
     width: 4rem;
     height: 4rem;
   }
+
+  .popup__img {
+    max-width: 18.75rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -177,7 +253,7 @@ body {
   }
 
   .technology__title {
-    font-size: 1.375rem;
+    font-size: 1.625rem;
     padding-bottom: 0.625rem;
   }
 
@@ -190,12 +266,16 @@ body {
   .technology__linux-link {
     right: 50%;
     margin-right: -2rem;
-    bottom: -1rem;
+    bottom: -2rem;
   }
 
   .technology__linux {
     width: 4rem;
     height: 4rem;
+  }
+
+  .popup__img {
+    max-width: 33.75rem;
   }
 }
 
@@ -215,4 +295,15 @@ body {
   .technology__stack {
     width: 100%;
   }
+
+  .popup__img {
+    max-width: 47rem;
+  }
 }
+
+@media (min-width: 993px) and (max-width: 1240px) {
+  .popup__img {
+    max-width: 60rem;
+  }
+}
+

@@ -9,9 +9,10 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Public full stack web-developer page" />
     <title>Full stack web-developer</title>
+    <script src="/script.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div id='root' class="container">
       <div class="title">
         <div class="title__author-block">
           <img class="title__photo" src="/img/photo.jpg" alt="photo" title="This is me"/>
@@ -40,18 +41,18 @@
               <a
                 target="_blabk"
                 rel="noopener noreferrer"
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                href="https://www.djangoproject.com/"
                 class="technology__link"
-                >Java Script</a
+                >Django</a
               >
             </li>
             <li class="technology__item">
               <a
                 target="_blabk"
                 rel="noopener noreferrer"
-                href="https://en.wikipedia.org/wiki/SQL"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 class="technology__link"
-                >SQL</a
+                >Java Script</a
               >
             </li>
             <li class="technology__item">
@@ -67,18 +68,18 @@
               <a
                 target="_blabk"
                 rel="noopener noreferrer"
-                href="https://www.djangoproject.com/"
+                href="https://nodejs.org/en/"
                 class="technology__link"
-                >Django</a
+                >Node JS</a
               >
             </li>
             <li class="technology__item">
               <a
                 target="_blabk"
                 rel="noopener noreferrer"
-                href="https://nodejs.org/en/"
+                href="https://en.wikipedia.org/wiki/SQL"
                 class="technology__link"
-                >Node JS</a
+                >SQL</a
               >
             </li>
             <li class="technology__item">
@@ -104,6 +105,15 @@
               title="My favorite core"
             />
           </a>
+        </div>
+      </div>
+      <div class="certificates">
+        <h3 class="certificates__title">Certificates</h3>
+        <div class="certificates__images">
+          <div class="image-block">
+            <img class="image-block__image" alt="bitmain" src="/img/bitmain.jpg" onclick="openImg(event.path[0])">
+            <p class="image-block__description">Bitmain</p>
+          </div>
         </div>
       </div>
     </div>
