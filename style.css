@@ -71,6 +71,11 @@ body {
   border-radius: 0.3125rem;
 }
 
+.technology__logo:hover {
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 50%) 0 0 0.625rem;
+}
+
 .technology__stack {
   width: 100%;
   position: relative;
@@ -79,18 +84,27 @@ body {
 .technology__title {
   text-align: center;
   font-size: 2.25rem;
-  margin: 0.9375rem 0 0.25rem;
+  margin: 1.5625rem 0 2.1875rem;
 }
 
 .technology__list {
-  padding-left: 8.125rem;
+  width: 25rem;
   box-sizing: border-box;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+
+.technology__item {
+  display:block;
+  float:left;
+  width:49%;
 }
 
 .technology__linux-link {
   position: absolute;
   right: 3.125rem;
-  bottom: 6.5625rem;
+  bottom: 5.5625rem;
 }
 
 .technology__linux {
@@ -105,6 +119,7 @@ body {
 
 .technology__link {
   text-decoration: none;
+  padding-left: 4.6875rem;
 }
 
 .technology__link:hover {
@@ -202,31 +217,26 @@ body {
     font-size: 1.875rem;
   }
 
-  .technology__stack {
-    order: 1;
-  }
-
   .technology__logo {
-    order: 2;
     width: 17.5rem;
     height: 17.5rem;
     margin: 5.3125rem auto 0;
   }
 
-  .technology {
-    flex-wrap: wrap;
+  .technology__title {
+    margin: 1.5625rem 0 1.5625rem;
   }
 
   .technology__list {
-    padding-left: 2.8125rem;
     width: 17.5rem;
-    margin: 1.25rem auto;
+  }
+
+  .technology__link {
+    padding-left: 1.5625rem;
   }
 
   .technology__linux-link {
-    right: 50%;
-    margin-right: -2rem;
-    bottom: -4.375rem;
+    margin: 0 6.25rem;
   }
 
   .technology__linux {
@@ -252,30 +262,42 @@ body {
     font-size: 1.75rem;
   }
 
-  .technology__title {
-    font-size: 1.625rem;
-    padding-bottom: 0.625rem;
-  }
-
-  .technology__list {
-    padding-left: 2.1875rem;
-    width: 11.25rem;
-    margin: 0 auto;
-  }
-
   .technology__linux-link {
-    right: 50%;
-    margin-right: -2rem;
-    bottom: -2rem;
-  }
-
-  .technology__linux {
-    width: 4rem;
-    height: 4rem;
+    margin: 0 9.5rem;
   }
 
   .popup__img {
     max-width: 33.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .technology {
+    flex-wrap: wrap;
+  }
+
+  .technology__logo {
+    order: 2;
+    margin: 1rem auto 0;
+  }
+
+  .technology__stack {
+    order: 1;
+    flex-wrap: wrap;
+  }
+
+  .technology__list {
+    margin: 0 auto;
+  }
+
+  .technology__linux-link {
+    position: static;
+    text-align: center;
+    display: block;
+  }
+
+  .technology__linux {
+    margin-top: 1.25rem;
   }
 }
 
@@ -288,12 +310,8 @@ body {
     font-size: 2.75rem;
   }
 
-  .technology__list {
-    padding-left: 4.375rem;
-  }
-
-  .technology__stack {
-    width: 100%;
+  .technology__linux-link {
+    margin: 0 9.5rem;
   }
 
   .popup__img {
@@ -307,3 +325,6 @@ body {
   }
 }
 
+.test {
+  background-color: red;
+}

@@ -6,7 +6,7 @@
 
 <img src="https://img.shields.io/badge/html-5-red.svg">
 
-<img src="https://img.shields.io/badge/css-3-green.svg">
+<img src="https://img.shields.io/badge/css-3-purple.svg">
 
 <img src="https://img.shields.io/badge/js-ES6-yellow.svg">
 
@@ -24,7 +24,7 @@ Just my web page, which tells a little about me.
 
 ## Project run
 
-Just run the **index.html** file in any modern browser 
+Just run the **index.html** file in any modern browser.
 
 ## Future scope
 

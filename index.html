@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Public full stack web-developer page" />
     <title>Full stack web-developer</title>
-    <script src="/script.js"></script>
+    
   </head>
   <body>
     <div id='root' class="container">
@@ -24,74 +24,103 @@
         <pre class="title__code" title="Hello to the new world of programmers and geeks !!!">print("Hello, World!")</pre>
       </div>
       <div class="technology">
-        <img class="technology__logo" src="/img/logo.jpg" alt="logo" title="Just my logo" />
+        <img class="technology__logo" src="/img/logo.jpg" alt="logo" title="Just my logo" id="logo" onclick="openImg(event)"/>
         <div class="technology__stack">
           <h3 class="technology__title" title="I can do something... =)">Technology stack</h3>
-          <ul class="technology__list">
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://www.python.org/"
-                class="technology__link"
-                >Python</a
-              >
-            </li>
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://www.djangoproject.com/"
-                class="technology__link"
-                >Django</a
-              >
-            </li>
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                class="technology__link"
-                >Java Script</a
-              >
-            </li>
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://reactjs.org/"
-                class="technology__link"
-                >React JS</a
-              >
-            </li>
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://nodejs.org/en/"
-                class="technology__link"
-                >Node JS</a
-              >
-            </li>
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://en.wikipedia.org/wiki/SQL"
-                class="technology__link"
-                >SQL</a
-              >
-            </li>
-            <li class="technology__item">
-              <a
-                target="_blabk"
-                rel="noopener noreferrer"
-                href="https://www.nginx.com/"
-                class="technology__link"
-                >NGINX</a
-              >
-            </li>
-          </ul>
+          <div class="technology__list-wrapper">
+            <ul class="technology__list">
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://www.python.org/"
+                  class="technology__link"
+                  >Python</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://www.djangoproject.com/"
+                  class="technology__link"
+                  >Django</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  class="technology__link"
+                  >Java Script</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://reactjs.org/"
+                  class="technology__link"
+                  >React JS</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://nodejs.org/en/"
+                  class="technology__link"
+                  >Node JS</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://en.wikipedia.org/wiki/SQL"
+                  class="technology__link"
+                  >SQL</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://www.nginx.com/"
+                  class="technology__link"
+                  >NGINX</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://webpack.js.org/"
+                  class="technology__link"
+                  >Webpack</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://www.docker.com/"
+                  class="technology__link"
+                  >Docker</a
+                >
+              </li>
+              <li class="technology__item">
+                <a
+                  target="_blabk"
+                  rel="noopener noreferrer"
+                  href="https://git-scm.com/"
+                  class="technology__link"
+                  >Git</a
+                >
+              </li>
+            </ul>
+          </div>
           <a
             target="_blabk"
             rel="noopener noreferrer"
@@ -109,13 +138,14 @@
       </div>
       <div class="certificates">
         <h3 class="certificates__title">Certificates</h3>
-        <div class="certificates__images">
+        <div class="certificates__images" id="certificates__images">
           <div class="image-block">
-            <img class="image-block__image" alt="bitmain" src="/img/bitmain.jpg" onclick="openImg(event.path[0])">
+            <img class="image-block__image" alt="bitmain" src="/img/bitmain.jpg" onclick="openImg(event)">
             <p class="image-block__description">Bitmain</p>
           </div>
         </div>
       </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>

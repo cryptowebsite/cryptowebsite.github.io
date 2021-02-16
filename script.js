@@ -1,11 +1,13 @@
-closeImg = () => {
-    const popup = document.getElementById('popup')
-    if (popup) {
-        popup.remove()
-    }
-}
+const openImg = (event) => {
+    const imgInfo = event.path[0]
 
-const openImg = (imgInfo) => {
+    closeImg = () => {
+        const popup = document.getElementById('popup')
+        if (popup) {
+            popup.remove()
+        }
+    }
+
     const root = document.getElementById('root')
     const backdrop = document.createElement('div')
     backdrop.setAttribute('id', 'backdrop')
