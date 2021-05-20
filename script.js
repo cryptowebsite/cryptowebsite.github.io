@@ -1,5 +1,5 @@
 const openImg = (event) => {
-    const imgInfo = event.path[0]
+    const imgInfo = (event.path && event.path[0]) || (event.composedPath && event.composedPath()[0])
 
     closeImg = () => {
         const popup = document.getElementById('popup')
@@ -21,7 +21,7 @@ const openImg = (event) => {
     closeBtn.setAttribute('class', 'popup__close-btn')
     closeBtn.setAttribute('onclick', 'closeImg()')
     closeBtn.innerHTML = '&#10060;'
-    
+
     const img = new Image()
     img.setAttribute('class', 'popup__img')
     img.src = imgInfo.src
@@ -37,3 +37,5 @@ const openImg = (event) => {
     popup.prepend(backdrop)
     root.prepend(popup)
 }
+
+

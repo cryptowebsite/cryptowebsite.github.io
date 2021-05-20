@@ -102,7 +102,6 @@ body {
 }
 
 .technology__linux-link {
-  position: absolute;
   right: 3.125rem;
   bottom: 5.5625rem;
 }
@@ -110,6 +109,11 @@ body {
 .technology__linux {
   width: 8rem;
   height: 8rem;
+  margin-top: 1.25rem;
+}
+
+.technology__linux-wrapper {
+  margin: 0 auto;
 }
 
 .technology__item {
@@ -178,14 +182,12 @@ body {
 
 .popup__close-btn {
   position: absolute;
-  top: -0.625rem;
-  left: -0.5625rem;
+  top: 2rem;
+  right: 2rem;
 }
 
 .popup__wrapper {
-  position: relative;
   z-index: 102;
-
 }
 
 @media (max-width: 575px) {
@@ -235,13 +237,13 @@ body {
     padding-left: 1.5625rem;
   }
 
-  .technology__linux-link {
-    margin: 0 6.25rem;
-  }
-
   .technology__linux {
     width: 4rem;
     height: 4rem;
+  }
+
+  .technology__linux-wrapper {
+    width: 4rem;
   }
 
   .popup__img {
@@ -262,12 +264,12 @@ body {
     font-size: 1.75rem;
   }
 
-  .technology__linux-link {
-    margin: 0 9.5rem;
-  }
-
   .popup__img {
     max-width: 33.75rem;
+  }
+
+  .technology__linux-wrapper {
+    width: 8rem;
   }
 }
 
@@ -290,15 +292,6 @@ body {
     margin: 0 auto;
   }
 
-  .technology__linux-link {
-    position: static;
-    text-align: center;
-    display: block;
-  }
-
-  .technology__linux {
-    margin-top: 1.25rem;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -310,12 +303,12 @@ body {
     font-size: 2.75rem;
   }
 
-  .technology__linux-link {
-    margin: 0 9.5rem;
-  }
-
   .popup__img {
     max-width: 47rem;
+  }
+  
+  .technology__linux-wrapper {
+    width: 8rem;
   }
 }
 
@@ -323,8 +316,4 @@ body {
   .popup__img {
     max-width: 60rem;
   }
-}
-
-.test {
-  background-color: red;
 }
